@@ -9,7 +9,9 @@ Package: neuroslink-default-settings-open
 Architecture: all 
 Depends:
 Recommends: gdm
-Description: default settings for Neuros Link hardware with open drivers 
+Conflicts: neuroslink-default-settings-nvidia, neuroslink-default-settings-ati
+Description: 
+default settings for Neuros Link hardware with open drivers 
  Various preconfigured items for Neuros Link.
  This package will:
   * Set GDM to auto login to neurostv user
