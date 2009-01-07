@@ -1,6 +1,6 @@
-neuroslink-default-settings-ati (1.0) intrepid; urgency=low
+neuroslink-default-settings-open (1.0) intrepid; urgency=low
 
-  * Package split into nvidia and ati versions
+  * Package split into nvidia, ati, and open versions.
 
  -- Tom Bruno <tbruno@neurostechnology.com>  Tue, 06 Jan 2009 14:03:35 -0600
 
