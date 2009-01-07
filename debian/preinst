@@ -1,0 +1,15 @@
+#! /bin/sh
+
+set -e
+
+#DEBHELPER#
+
+case "$1" in
+  upgrade)
+	if [ -e /etc/pulse/default.pa.orig ]; then
+	cp /etc/pulse/default.pa.orig /etc/pulse/default.pa
+	rm /etc/pulse/default.pa.orig
+	fi
+    ;;
+
+esac

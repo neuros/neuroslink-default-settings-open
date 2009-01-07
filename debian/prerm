@@ -1,0 +1,14 @@
+#! /bin/sh
+
+set -e
+
+#DEBHELPER#
+
+case "$1" in
+  remove)
+    update-alternatives --remove gdm-config-derivative /etc/xdg/neurostvpc/gdm/gdm.conf
+    if [ -e /etc/pulse/defualt.pa.org ]; then
+     mv /etc/pulse/default.pa.orig /etc/pulse/default.pa
+    fi
+    ;;
+esac

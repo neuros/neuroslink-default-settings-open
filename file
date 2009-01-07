@@ -1,0 +1,1 @@
+amixer -c1 'IEC958' unmute

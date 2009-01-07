@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+include /usr/share/cdbs/1/rules/debhelper.mk
+
+#BZR_REVISION+=47
+#BZR_BRANCH+=http://bazaar.launchpad.net/~mythbuntu/mythbuntu/$(DEB_SOURCE_PACKAGE)
+#TARFILE+=$(DEB_SOURCE_PACKAGE)_$(DEB_UPSTREAM_VERSION).orig.tar.gz
+
+#get-orig-source::
+#	bzr export -r $(BZR_REVISION) $(DEB_SOURCE_PACKAGE) $(BZR_BRANCH)
+#	tar czf $(CURDIR)/../$(TARFILE) $(DEB_SOURCE_PACKAGE) --exclude debian
+#	rm -rf $(CURDIR)/$(DEB_SOURCE_PACKAGE)
+
+#../$(TARFILE):: get-orig-source

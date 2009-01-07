@@ -1,0 +1,78 @@
+neuroslink-default-settings-ati (1.0) intrepid; urgency=low
+
+  * Package split into nvidia and ati versions
+
+ -- Tom Bruno <tbruno@neurostechnology.com>  Tue, 06 Jan 2009 14:03:35 -0600
+
+neurostvpc-default-settings (0.11) intrepid; urgency=low
+
+  * Made pulse audio config more robust for upgrade/install/remove
+
+ -- Tom Bruno <tbruno@neurostechnology.com>  Wed, 17 Dec 2008 18:48:43 -0600
+
+neurostvpc-default-settings (0.10) intrepid; urgency=low
+
+  * Remove Login Fail/Success sounds at Jason's request
+  * Decrease login time to 5 seconds due to bug on startup that doesn't
+    auto login to work. 
+
+ -- Tom Bruno <tom@intrepid-dev.localdomain>  Wed, 19 Nov 2008 22:32:45 -0600
+
+neurostvpc-default-settings (0.9) intrepid; urgency=low
+
+  * Add firefox to global autostart
+
+ -- Tom Bruno <tbruno@neurostechnology.com>  Sun, 09 Nov 2008 16:42:07 -0600
+
+neurostvpc-default-settings (0.8) intrepid; urgency=low
+
+  * Limit Ati driver to only 720p and 480p HD resolutions
+
+ -- Tom Bruno <tbruno@neurostechnology.com>  Wed, 05 Nov 2008 14:20:47 -0600
+
+neurostvpc-default-settings (0.7) intrepid; urgency=low
+
+  * Always unmute NeurosTVPC HDMI audio on boot
+
+ -- tom <tbruno@neurostechnology.com>  Wed, 05 Nov 2008 12:03:59 -0600
+
+neurostvpc-default-settings (0.6) intrepid; urgency=low
+
+  * Setup pulse audio configuration to NeurosTVPC hardware directly
+  * Create combined output for SB and HDMI
+  * Set combined output to always be default
+
+ -- tom <tom@workstation1>  Wed, 05 Nov 2008 09:16:22 -0600
+
+neurostvpc-default-settings (0.5) intrepid; urgency=low
+
+  * Fixed pulse audio load same card twice
+
+ -- Tom Bruno <tom@neurostechnology.com>  Tue, 04 Nov 2008 09:38:00 -0600
+
+neurostvpc-default-settings (0.4) intrepid; urgency=low
+
+  * Add HDMI and other audio ports to pulse audio by hand
+  * Add symlink to make HDMI dev node correct name 
+  * Added backup of pulse audio default.pa
+
+ -- Tom Bruno <tbruno@neurostechnology.com>  Tue, 04 Nov 2008 09:15:56 -0600
+
+neurostvpc-default-settings (0.3) intrepid; urgency=low
+
+  * Fixed OverlaySupport to enable Xv with fglrx 
+
+ -- Tom Bruno <tbruno@neurostechnology.com>  Mon, 03 Nov 2008 13:24:56 -0600
+
+neurostvpc-default-settings (0.2) intrepid; urgency=low
+
+  * Depend on fglrx packages and neurostvpc-desktop
+  * Auto install fglrx configuration into xorg.conf
+
+ -- Tom Bruno <tom@neurostechnology.com>  Mon, 03 Nov 2008 11:39:48 -0600
+
+neurostvpc-default-settings (0.1) intrepid; urgency=low
+
+  * Initial release. Fork of mythbuntu-default-settings
+
+ -- Tom Bruno <tbruno@neurostechnology.com>  Mon, 03 Nov 2008 10:21:26 -0600

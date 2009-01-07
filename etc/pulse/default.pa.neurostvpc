@@ -1,0 +1,48 @@
+#!/usr/bin/pulseaudio -nF
+#
+# This file is part of PulseAudio.
+.nofail
+
+.fail
+
+### Load audio drivers statically (it's probably better to not load
+### these drivers manually, but instead use module-hal-detect --
+### see below -- for doing this automatically)
+
+load-module module-alsa-sink device=hw:0,0 sink_name="SB"
+load-module module-alsa-sink device=hw:1,0 sink_name="HDMI"
+
+### Alternatively use the static hardware detection module (for systems that
+### lack HAL support)
+load-module module-detect
+
+### Load several protocols
+.ifexists module-esound-protocol-unix.so
+load-module module-esound-protocol-unix
+.endif
+load-module module-native-protocol-unix
+
+### Automatically restore the volume of playback streams
+load-module module-volume-restore
+
+### Automatically restore the default sink/source when changed by the user during runtime
+#load-module module-default-device-restore
+
+### Automatically move streams to the default sink if the sink they are
+### connected to dies, similar for sources
+load-module module-rescue-streams
+
+### Automatically suspend sinks/sources that become idle for too long
+load-module module-suspend-on-idle
+
+### Publish connection data in the X11 root window
+.ifexists module-x11-publish.so
+.nofail
+load-module module-x11-publish
+.fail
+.endif
+
+### Make some devices default
+load-module module-combine sink_name=output master=HDMI slaves=SB
+set-default-sink output
+
