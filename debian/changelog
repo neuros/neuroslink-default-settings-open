@@ -3,7 +3,7 @@ neuroslink-default-settings-open (1.1) intrepid; urgency=low
   * Remove firefox from default statup
   * Add xbmc to autostart at login
 
- -- Tom Bruno <tbruno@neurostechnology.com>  Tue, 19 May 2009 19:48:18 -0500
+ -- Tom Bruno <tbruno@neurostechnology.com>  Tue, 19 May 2009 19:53:22 -0500
 
 neuroslink-default-settings-open (1.0) intrepid; urgency=low
 
